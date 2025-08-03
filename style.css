@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: #C3E2FF;
+    overflow-x: hidden;
+  }
+  
+  .container {
+    background: #FEFDF9;
+    padding: 40px;
+    margin: 70px auto;
+    border-radius: 25px;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 10;
+  }
+  
+  h1 {
+    color: #996512;
+    animation: bounce 1.5s infinite;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  input {
+    padding: 12px;
+    border: 2px solid #996512;
+    border-radius: 12px;
+    font-size: 1rem;
+  }
+  
+  button {
+    background: #FDEB7D;
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+  }
+  
+  ul#tripList {
+    margin-top: 30px;
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul#tripList li {
+    background: #FFF9EF;
+    padding: 12px 20px;
+    border-radius: 12px;
+    margin: 10px auto;
+    width: fit-content;
+    animation: slideIn 0.4s ease;
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
+  
+  @keyframes slideIn {
+    from { transform: translateX(-20px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+  
+  /* Fun shapes */
+  .fun-shapes .sun {
+    width: 80px;
+    height: 80px;
+    background: #FFD700;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+  }
+  
+  .pulse {
+    animation: pulse 3s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.15); opacity: 0.8; }
+  }
+  
+  .fun-shapes .cloud {
+    width: 100px;
+    height: 60px;
+    background: #FFF;
+    border-radius: 50px;
+    position: absolute;
+    top: 100px;
+    right: 50px;
+  }
+  
+  .float {
+    animation: float 4s ease-in-out infinite;
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  .fun-shapes .plane {
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 50px solid #FF8552;
+    position: absolute;
+    top: 180px;
+    left: 20px;
+  }
+  
+  .fly {
+    animation: fly 6s linear infinite;
+  }
+  @keyframes fly {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(100vw); }
+  }
+  
