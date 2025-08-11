@@ -61,7 +61,7 @@ Zero dependencies, just HTML/CSS/JS and vacation vibes 🌴
 ## 📃 License
 
 This project is open source and free to use
-
+Follow Me On IG !
 ---
 
 > 🧳 **Fun Travel Planner** – Because sometimes, you just need to plan fake trips to feel alive 💡
